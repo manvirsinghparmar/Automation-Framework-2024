@@ -29,9 +29,11 @@ public class ForgotYourPasswordPage extends TestBase {
 		continueBtn.click();
 	}
 
-	public void submitForgetPwdRequest(String email) {
+	public AccountLoginPage submitForgetPwdRequest(String email) {
 		enterEmail(email);
 		clickContinueBtn();
+		return new AccountLoginPage();
+
 	}
 
 	public String getAlertBannerText() {

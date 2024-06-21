@@ -26,7 +26,7 @@ public class AccountLoginPage extends TestBase {
 
 	@FindBy(css = "div.alert-success")
 	WebElement successBanner;
-	
+
 	@FindBy(xpath = "//a[text()='Forgotten Password']")
 	WebElement forgettenPwdLink;
 
@@ -49,15 +49,17 @@ public class AccountLoginPage extends TestBase {
 	public String getTextFromSuccessBanner() {
 		return successBanner.getText();
 	}
-	
-	public void clickForgetPwdLink() {
+
+	public ForgotYourPasswordPage clickForgetPwdLink() {
 		forgettenPwdLink.click();
+		return new ForgotYourPasswordPage();
 	}
 
-	public void loginToMyAccount(String email, String pwd) {
+	public MyAccountPage loginToMyAccount(String email, String pwd) {
 		enterEmail(email);
 		enterPwd(pwd);
 		clickLoginBtn();
+		return new MyAccountPage();
 	}
 
 }
