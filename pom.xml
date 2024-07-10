@@ -5,16 +5,15 @@
 
 	<groupId>March_Automation_2024</groupId>
 	<artifactId>Automation_Framework_2024</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>4.7.1</version>
 
 	<name>Automation_Framework_2024</name>
-	<!-- FIXME change it to the project's website -->
-	<url>http://www.example.com</url>
+	<url>https://naveenautomationlabs.com/opencart/index.php?route=account/login</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -23,7 +22,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.5</version>
-			<scope>test</scope>
+			<scope>compile</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
